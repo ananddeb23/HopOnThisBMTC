@@ -1,0 +1,4 @@
+rootProject.name = 'hopOnThisBMTC'
+
+
+include ':app'
