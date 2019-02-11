@@ -8,9 +8,6 @@ export default StyleSheet.create({
     width: '100%',
     alignItems: 'center',
   },
-  space: {
-    marginTop: 0
-  },
   innerContainer: { 
     flex: 4,
     flexDirection: 'column',

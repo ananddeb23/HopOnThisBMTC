@@ -24,4 +24,8 @@ class History extends Component {
   }
 }
 
+History.propTypes = {
+  data: PropTypes.array
+}
+
 export default History;

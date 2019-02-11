@@ -1,12 +1,9 @@
 
 
 import React, { Component } from 'react';
-import {View ,Text, TouchableOpacity, Modal, Alert} from 'react-native';
-import Autocomplete from './../Autocomplete/Autocomplete.component';
+import {Text, TouchableOpacity} from 'react-native';
 import PropTypes from 'prop-types';
 import styles from './LargeButton.component.style';
-
-
 
 class LargeButton extends Component {
   render() {

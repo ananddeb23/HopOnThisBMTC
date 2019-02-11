@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { TextInput, View ,Text, Image, Alert, TouchableOpacity} from 'react-native';
-import PropTypes from 'prop-types';
+import {View ,Text, Image} from 'react-native';
 import InputScreen from '../InputScreen/InputScreen.component';
-import Autocomplete from './../Autocomplete/Autocomplete.component';
 import History from './../History/History.component';
 import styles from './HopOn.component.style';
 import buses from '../../assets/busData.json';
@@ -80,24 +78,6 @@ class HopOn extends Component {
           <View style={styles.btnContainer}>
             <LargeButton cb={this.toggleDestination} text={'Select Destination'} isPrimary={true}  />
             <LargeButton cb={this.toggleBus} text={'Select Bus'} isPrimary={false} isEnabled={this.state.destination !== ''} />
- 
-          {/* <TouchableOpacity style={{ width: 300, height: '20%', borderRadius: 5, borderColor: 'white', borderWidth: 0.5, backgroundColor: '#27AE60',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          alignSelf: 'center' ,
-           margin: 10}}
-           onPress={this.toggleDestination}>
-           <Text style={{color: 'white', fontSize: 15}}> Select Destination</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={{ width: 300, height: '20%', borderRadius: 5, borderColor: 'white', borderWidth: 0.5, backgroundColor: '#3498DB',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          alignSelf: 'center'}}
-           onPress={this.toggleBus}>
-           <Text style={{color: 'white', fontSize: 15}}> Select Bus</Text>
-          </TouchableOpacity>  */}
           </View>
           
           <InputScreen 
@@ -115,68 +95,6 @@ class HopOn extends Component {
             placeholder={'Bus...'}
             closeInputScreenCB={this.toggleBus}
           /> 
-          {/* style={{flex:1, height: 200, width: 410, margin: 20}}
-          animationType='fade'
-          transparent={true}
-          visible={this.state.showDestinationToggle}
-          onRequestClose={() => {
-            Alert.alert('InputScreen has been closed.');
-          }}>
-          <View style={{
-          flex: 1,
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          marginTop: 40}}>
-          <Autocomplete data={this.state.stops} cb={this.lockDestination} placeholder={'Where would you like to go...'}/>
-
-             <TouchableOpacity style={{
-                   width: 300,
-                     height: 300,
-                     flex: 1,
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',marginBottom: 40}}
-                    onPress={this.toggleDestination}>
-              <View style={{backgroundColor: 'white', borderRadius: 50, width: 50, height: 50, }}> 
-                <Text style={{marginLeft: 17, marginTop: 9, fontSize: 25}}>X</Text>
-
-              </View>
-            </TouchableOpacity>
-  </View>
-          </InputScreen> */}
-          {/* <InputScreen
-          style={{flex:1, height: 200, width: 410, margin: 20}}
-          animationType="fade"
-          transparent={true}
-          visible={this.state.showBusToggle}
-          onRequestClose={() => {
-            Alert.alert('InputScreen has been closed.');
-          }}>
-          <View style={{
-          flex: 1,
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          marginTop: 40}}>
-          <Autocomplete data={this.state.buses} cb={this.performSearch} placeholder={'Bus...'}/>
-
-             <TouchableOpacity style={{
-                   width: 300,
-                     height: 300,
-                     flex: 1,
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',marginBottom: 40}}
-                    onPress={this.toggleBus}>
-               <View style={{backgroundColor: 'white', borderRadius: 50, width: 50, height: 50, }}> 
-                <Text style={{marginLeft: 17, marginTop: 9, fontSize: 25}}>X</Text>
-
-              </View>
-            </TouchableOpacity>
-  </View>
-          </InputScreen> */}
-          {/* <View style={styles.space}/>     */}
           
         </View>
     );

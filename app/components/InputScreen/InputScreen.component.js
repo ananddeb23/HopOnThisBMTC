@@ -1,6 +1,3 @@
-
-
-
 import React, { Component } from 'react';
 import {View ,Text, TouchableOpacity, Modal, Alert} from 'react-native';
 import Autocomplete from '../Autocomplete/Autocomplete.component';

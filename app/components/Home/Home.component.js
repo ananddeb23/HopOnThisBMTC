@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { TextInput, View ,Text} from 'react-native';
-import PropTypes from 'prop-types';
+import { View } from 'react-native';
 import styles from './Home.component.style';
 import HopOn from '../HopOn/HopOn.component';
 import {connect} from 'react-redux';
