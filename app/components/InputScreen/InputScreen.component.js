@@ -9,7 +9,6 @@ import styles from './InputScreen.component.style';
 class InputScreen extends Component {
   render() {
     return (
-      <View>
         <Modal
           style={styles.container}
           animationType="fade"
@@ -25,8 +24,7 @@ class InputScreen extends Component {
               </View>
             </TouchableOpacity>
           </View>
-        </Modal>
-     </View>     
+        </Modal>  
     );
   }
 }
